@@ -13,8 +13,8 @@ export const getAllCars = ({ dispatch }) => {
   // we dispatch products
   shop.getCars(cars => {
     // test
-    console.log('--- getAllCars ---')
-    console.log(cars)
+    // console.log('--- getAllCars ---')
+    // console.log(cars)
     // dspatch
     // type
     dispatch(types.RECEIVE_CARS, cars)

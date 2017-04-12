@@ -1,11 +1,22 @@
 <!-- no store here in this component -->
 <template>
-  <el-row>
-    <el-col v-for="p in cars" :span="6">
-      <p><img :src="`${p.imgUrl}`" /></p>
-      <p>{{ p.title }} {{ p.price }}</a></p>
-    </el-col>
-  </el-row>
+  <div class="container">
+    <div class="row">
+      <div v-for="p in cars" class="col-lg-4 col-md-6 col-sm-12 mycol">
+        <p>
+          <a :href="`${p.url}`">
+            <img :src="`${p.imgUrl}`" :height=238 :width=357 />
+          </a>
+        </p>
+        <p>
+          <b>Title</b>: {{ p.title }}<br/>
+          <b>Price</b>: {{ p.price }}<br/>
+          <b>Seats</b>: {{ p.seats }}<br/>
+          <b>Cat</b>: {{ p.category }}
+        </p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -34,5 +45,11 @@
 </script>
 
 <style>
+.row {
+  border: 1px solid;
+}
 
+.mycol {
+  border: 1px solid;
+}
 </style>

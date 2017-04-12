@@ -1,7 +1,7 @@
 <!-- / or /cart -->
 <template>
   <div class="menu-links">
-    <a v-link="{path:'/'}">HOME</a>
+    <a v-link="{path:'/'}"></a>
   </div>
 </template>
 
